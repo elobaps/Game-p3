@@ -21,5 +21,10 @@ class Character {
         self.descriptionCharacter = descriptionCharacter
         self.nameWeapon = nameWeapon
         self.damage = damage
+        
+    }
+    
+    func attack() {
+        
     }
 }
