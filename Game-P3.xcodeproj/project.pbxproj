@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FD355862253EEC500B4B007 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD355852253EEC500B4B007 /* Game.swift */; };
 		2FFF6F2C225134290091EC7E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F2B225134290091EC7E /* main.swift */; };
+		2FFF6F35225135140091EC7E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F34225135140091EC7E /* Team.swift */; };
+		2FFF6F3822513AF70091EC7E /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F3722513AF70091EC7E /* Warrior.swift */; };
+		2FFF6F3A22513B020091EC7E /* Magician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F3922513B020091EC7E /* Magician.swift */; };
+		2FFF6F3C22513B0B0091EC7E /* Colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F3B22513B0B0091EC7E /* Colossus.swift */; };
+		2FFF6F3E22513B130091EC7E /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F3D22513B130091EC7E /* Dwarf.swift */; };
+		2FFF6F4022513CA60091EC7E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F3F22513CA60091EC7E /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FD355852253EEC500B4B007 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		2FFF6F28225134290091EC7E /* Game-P3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Game-P3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFF6F2B225134290091EC7E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2FFF6F34225135140091EC7E /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		2FFF6F3722513AF70091EC7E /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		2FFF6F3922513B020091EC7E /* Magician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magician.swift; sourceTree = "<group>"; };
+		2FFF6F3B22513B0B0091EC7E /* Colossus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colossus.swift; sourceTree = "<group>"; };
+		2FFF6F3D22513B130091EC7E /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
+		2FFF6F3F22513CA60091EC7E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FD35587225660F900B4B007 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				2FFF6F34225135140091EC7E /* Team.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
 		2FFF6F1F225134290091EC7E = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +80,23 @@
 			isa = PBXGroup;
 			children = (
 				2FFF6F2B225134290091EC7E /* main.swift */,
+				2FD355852253EEC500B4B007 /* Game.swift */,
+				2FD35587225660F900B4B007 /* Team */,
+				2FFF6F3622513AD10091EC7E /* Characters */,
 			);
 			path = "Game-P3";
+			sourceTree = "<group>";
+		};
+		2FFF6F3622513AD10091EC7E /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				2FFF6F3722513AF70091EC7E /* Warrior.swift */,
+				2FFF6F3F22513CA60091EC7E /* Character.swift */,
+				2FFF6F3922513B020091EC7E /* Magician.swift */,
+				2FFF6F3B22513B0B0091EC7E /* Colossus.swift */,
+				2FFF6F3D22513B130091EC7E /* Dwarf.swift */,
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFF6F35225135140091EC7E /* Team.swift in Sources */,
+				2FD355862253EEC500B4B007 /* Game.swift in Sources */,
+				2FFF6F3822513AF70091EC7E /* Warrior.swift in Sources */,
 				2FFF6F2C225134290091EC7E /* main.swift in Sources */,
+				2FFF6F4022513CA60091EC7E /* Character.swift in Sources */,
+				2FFF6F3E22513B130091EC7E /* Dwarf.swift in Sources */,
+				2FFF6F3C22513B0B0091EC7E /* Colossus.swift in Sources */,
+				2FFF6F3A22513B020091EC7E /* Magician.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
