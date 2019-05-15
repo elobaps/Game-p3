@@ -12,6 +12,6 @@ import Foundation
 
 class Dwarf:Character {
     init(name:String) {
-        super.init(lifePoints: 60, nameCharacter: name, descriptionCharacter: "Nain", nameWeapon: "crossbow", damage: 20)
+        super.init(lifePoints: 60, nameCharacter: name, descriptionCharacter: "Nain", weapon:Crossbrow())
     }
 }

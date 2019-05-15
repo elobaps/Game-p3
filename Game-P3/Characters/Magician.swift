@@ -12,6 +12,24 @@ import Foundation
 
 class Magician:Character {
     init(name:String) {
-        super.init(lifePoints: 80, nameCharacter: name, descriptionCharacter: "Mage", nameWeapon: "phoenix feather", damage: 0)
+        super.init(lifePoints: 80, nameCharacter: name, descriptionCharacter: "Mage", weapon:PhoenixFeather())
+    }
+    override func attack(target: Character) {
+        print("You don't have the permission to attack!")
+    }
+    
+    func treat(target:Character) {
+        if lifePoints > 0  {
+            if target.lifePoints <= 0 {
+                print("He's alrady dead !")
+            } else {
+                if let phoenix = target.weapon as? PhoenixFeather {
+                    target.lifePoints += phoenix.magic
+                      print("\(nameCharacter)  \(phoenix.magic) to your  \(target.nameCharacter)")
+                }
+            }
+        } else {
+            print("you're already dead ! You can't heal...")
+        }
     }
 }

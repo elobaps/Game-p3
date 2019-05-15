@@ -13,6 +13,6 @@ import Foundation
 
 class Warrior:Character {
     init(name:String) {
-        super.init(lifePoints: 100, nameCharacter: name, descriptionCharacter: "Combattant", nameWeapon: "excalibur", damage: 10)
+        super.init(lifePoints: 100, nameCharacter: name, descriptionCharacter: "Combattant", weapon:Excalibur())
     }
 }

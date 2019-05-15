@@ -12,6 +12,6 @@ import Foundation
 
 class Colossus:Character {
     init(name:String) {
-        super.init(lifePoints: 120, nameCharacter: name, descriptionCharacter: "Colosse", nameWeapon: "ax", damage: 5)
+        super.init(lifePoints: 120, nameCharacter: name, descriptionCharacter: "Colosse", weapon:Ax())
     }
 }

@@ -67,7 +67,7 @@ class Team {
     
     // the player created his team by choosing 3 characters
     func createTeam()  {
-        for _ in 1...3 {
+        for _ in 1..<4 {
             var userChoiceTeam = 0
             repeat {
                 playerChoice()   // call the function playerChoice who describe character
@@ -100,6 +100,24 @@ class Team {
                 return
             }
         }
+    }
+    
+    func resumeTeam() {
+        for (key, value) in characters.enumerated() {
+            value.resumeCharacter(index: key+1)
+        }
+    }
+    
+    func isDead() -> Bool {
+        var isAlive = true
+        for character in characters {
+            if character.lifePoints == 0 {
+                isAlive = true
+            } else {
+                return false
+            }
+        }
+            return isAlive
     }
     
 }

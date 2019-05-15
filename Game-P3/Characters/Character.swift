@@ -10,21 +10,35 @@ import Foundation
 
 //Creation of the character class that defines each of them
 class Character {
-    var nameCharacter:String
+    let nameCharacter:String
     var lifePoints:Int
-    var descriptionCharacter:String
-    let nameWeapon:String
-    let damage: Int
-    init(lifePoints:Int, nameCharacter:String, descriptionCharacter: String, nameWeapon: String, damage: Int) {
+    let descriptionCharacter:String
+    var weapon:Weapon
+    init(lifePoints:Int, nameCharacter:String, descriptionCharacter: String, weapon:Weapon) {
         self.lifePoints = lifePoints
         self.nameCharacter = nameCharacter
         self.descriptionCharacter = descriptionCharacter
-        self.nameWeapon = nameWeapon
-        self.damage = damage
-        
+        self.weapon = weapon
     }
     
-    func attack() {
-        
+    func resumeCharacter(index: Int) {
+        print("\(index) : " + nameCharacter + " - \(lifePoints) points de vie - \(weapon.damage) points de dégats - " + descriptionCharacter)
     }
+    
+    func attack(target:Character) {
+        if lifePoints > 0  {
+            if target.lifePoints <= 0 {
+                print("He's alrady dead !")
+            } else {
+                target.lifePoints -= weapon.damage
+                if target.lifePoints <= 0 {
+                    target.lifePoints = 0
+                }
+                print("\(nameCharacter) inflicted \(weapon.damage) to your enemy \(target.nameCharacter)")
+            }
+        } else {
+            print("you're already dead ! You can't attack your enemy...")
+        }
+    }
+    
 }
