@@ -32,6 +32,7 @@ class Team {
         return name
     }
     
+    // character selection loop in his team by the user
     func playerChoice() {
         print("")
         print("===============================")
@@ -43,6 +44,7 @@ class Team {
         print("===============================")
     }
     
+    // function that checks if the name chosen by the user is not already used
     func onlyName() -> String  {
         var nameCharacter = String()
         repeat {
@@ -62,11 +64,10 @@ class Team {
         return nameCharacter
     }
     
-    // composition of the team
     
     
     // the player created his team by choosing 3 characters
-    func createTeam()  {
+    private func createTeam()  {
         for _ in 1..<4 {
             var userChoiceTeam = 0
             repeat {
@@ -102,12 +103,14 @@ class Team {
         }
     }
     
+    // function that allows to browse my character chart and display the teams
     func resumeTeam() {
         for (key, value) in characters.enumerated() {
             value.resumeCharacter(index: key+1)
         }
     }
     
+    // function to check if the character is dead. return true if is right
     func isDead() -> Bool {
         var isAlive = true
         for character in characters {

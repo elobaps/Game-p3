@@ -8,7 +8,7 @@
 
 import Foundation
 
-//Creation of the character class that defines each of them
+// creation of the character class that defines each of them
 class Character {
     let nameCharacter:String
     var lifePoints:Int
@@ -25,6 +25,7 @@ class Character {
         print("\(index) : " + nameCharacter + " - \(lifePoints) points de vie - \(weapon.damage) points de dégats - " + descriptionCharacter)
     }
     
+    // function that determines whether the character is alive or not and allows it to be damaged
     func attack(target:Character) {
         if lifePoints > 0  {
             if target.lifePoints <= 0 {

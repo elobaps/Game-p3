@@ -8,16 +8,17 @@
 
 import Foundation
 
-//Creation of the magician class that inherits from the character class and defines magician
-
+// creation of the magician class that inherits from the character class and defines magician
 class Magician:Character {
     init(name:String) {
         super.init(lifePoints: 80, nameCharacter: name, descriptionCharacter: "Mage", weapon:PhoenixFeather())
     }
+    // function specific to the magician who does not have the right to attack
     override func attack(target: Character) {
         print("You don't have the permission to attack!")
     }
     
+    // function that determines whether the character is alive or not and allows it to be healed by the magician
     func treat(target:Character) {
         if lifePoints > 0  {
             if target.lifePoints <= 0 {

@@ -9,8 +9,7 @@
 import Foundation
 
 
-//Creation of the warrior class that inherits from the character class and defines warrior
-
+// creation of the warrior class that inherits from the character class and defines warrior
 class Warrior:Character {
     init(name:String) {
         super.init(lifePoints: 100, nameCharacter: name, descriptionCharacter: "Combattant", weapon:Excalibur())

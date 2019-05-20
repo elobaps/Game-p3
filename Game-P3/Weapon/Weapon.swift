@@ -8,6 +8,7 @@
 
 import Foundation
 
+// creation of the weapon class that defines each of them
 class Weapon {
     let nameWeapon:String
     let damage: Int

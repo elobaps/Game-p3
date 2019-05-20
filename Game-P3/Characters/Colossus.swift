@@ -8,8 +8,7 @@
 
 import Foundation
 
-//Creation of the colossus class that inherits from the character class and defines colossus 
-
+// creation of the colossus class that inherits from the character class and defines colossus 
 class Colossus:Character {
     init(name:String) {
         super.init(lifePoints: 120, nameCharacter: name, descriptionCharacter: "Colosse", weapon:Ax())

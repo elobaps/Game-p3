@@ -8,6 +8,7 @@
 
 import Foundation
 
+// creation of the class Phoenix Feather that inherits the class of weapons and defines the care for the magician
 class PhoenixFeather:Weapon {
     let magic:Int = 20
     init(){
