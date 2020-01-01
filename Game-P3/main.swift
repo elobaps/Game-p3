@@ -8,6 +8,5 @@
 
 import Foundation
 
-
 let newGame = Game()
 newGame.startGame()

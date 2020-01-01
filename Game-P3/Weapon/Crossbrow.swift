@@ -8,7 +8,7 @@
 
 import Foundation
 
-// creation of the class Crossbrow that inherits the class of weapons and defines the weapon
+/// creation of the class Crossbrow that inherits the class of weapons and defines the weapon
 class Crossbrow:Weapon {
     init(){
         super.init(nameWeapon: "Crossbrow", damage: 40)

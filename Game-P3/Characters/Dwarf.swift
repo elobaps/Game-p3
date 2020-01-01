@@ -8,7 +8,7 @@
 
 import Foundation
 
-// creation of the dwarf class that inherits from the character class and defines dwarf 
+/// creation of the dwarf class that inherits from the character class and defines dwarf 
 class Dwarf:Character {
     init(name:String) {
         super.init(lifePoints: 60, nameCharacter: name, descriptionCharacter: "Nain", weapon:Crossbrow())

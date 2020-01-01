@@ -12,6 +12,8 @@
 		2F19A45D227E204E00EC3532 /* Ax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A45C227E204E00EC3532 /* Ax.swift */; };
 		2F19A45F227E207000EC3532 /* Crossbrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A45E227E207000EC3532 /* Crossbrow.swift */; };
 		2F19A4612281AABE00EC3532 /* PhoenixFeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19A4602281AABE00EC3532 /* PhoenixFeather.swift */; };
+		2F7E8960228C756D008C6C34 /* BewitchingStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E895F228C756D008C6C34 /* BewitchingStick.swift */; };
+		2F7E8962228D6EA3008C6C34 /* Spear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E8961228D6EA3008C6C34 /* Spear.swift */; };
 		2FD355862253EEC500B4B007 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD355852253EEC500B4B007 /* Game.swift */; };
 		2FFF6F2C225134290091EC7E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F2B225134290091EC7E /* main.swift */; };
 		2FFF6F35225135140091EC7E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF6F34225135140091EC7E /* Team.swift */; };
@@ -40,6 +42,8 @@
 		2F19A45C227E204E00EC3532 /* Ax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ax.swift; sourceTree = "<group>"; };
 		2F19A45E227E207000EC3532 /* Crossbrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crossbrow.swift; sourceTree = "<group>"; };
 		2F19A4602281AABE00EC3532 /* PhoenixFeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoenixFeather.swift; sourceTree = "<group>"; };
+		2F7E895F228C756D008C6C34 /* BewitchingStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BewitchingStick.swift; sourceTree = "<group>"; };
+		2F7E8961228D6EA3008C6C34 /* Spear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spear.swift; sourceTree = "<group>"; };
 		2FD355852253EEC500B4B007 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		2FFF6F28225134290091EC7E /* Game-P3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Game-P3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFF6F2B225134290091EC7E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -69,7 +73,9 @@
 				2F19A45A227E201300EC3532 /* Excalibur.swift */,
 				2F19A45C227E204E00EC3532 /* Ax.swift */,
 				2F19A45E227E207000EC3532 /* Crossbrow.swift */,
+				2F7E8961228D6EA3008C6C34 /* Spear.swift */,
 				2F19A4602281AABE00EC3532 /* PhoenixFeather.swift */,
+				2F7E895F228C756D008C6C34 /* BewitchingStick.swift */,
 			);
 			path = Weapon;
 			sourceTree = "<group>";
@@ -185,11 +191,13 @@
 				2FFF6F3822513AF70091EC7E /* Warrior.swift in Sources */,
 				2FFF6F2C225134290091EC7E /* main.swift in Sources */,
 				2FFF6F4022513CA60091EC7E /* Character.swift in Sources */,
+				2F7E8960228C756D008C6C34 /* BewitchingStick.swift in Sources */,
 				2F19A45B227E201300EC3532 /* Excalibur.swift in Sources */,
 				2FFF6F3E22513B130091EC7E /* Dwarf.swift in Sources */,
 				2F19A45D227E204E00EC3532 /* Ax.swift in Sources */,
 				2FFF6F3C22513B0B0091EC7E /* Colossus.swift in Sources */,
 				2FFF6F3A22513B020091EC7E /* Magician.swift in Sources */,
+				2F7E8962228D6EA3008C6C34 /* Spear.swift in Sources */,
 				2F19A457227E1D1400EC3532 /* Weapon.swift in Sources */,
 				2F19A45F227E207000EC3532 /* Crossbrow.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 
 import Foundation
 
-// creation of the class BetwitchStick that inherits the class of weapons and defines the bonus care of the chest for magician
+/// creation of the class BetwitchStick that inherits the class of weapons and defines the bonus care of the chest for magician
 class BewitchingStick:Weapon {
     let magic:Int = 50
     init(){

@@ -8,7 +8,7 @@
 
 import Foundation
 
-// creation of the class Spear that inherits the class of weapons and defines the bonus weapon of the chest for attackers
+/// creation of the class Spear that inherits the class of weapons and defines the bonus weapon of the chest for attackers
 class Spear:Weapon {
     init() {
         super.init(nameWeapon: "Spear", damage: 80)

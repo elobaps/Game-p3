@@ -12,6 +12,8 @@ import Foundation
 
 class Team {
     
+    // MARK: - Properties
+    
     var characters = [Character]() // creation of the empty players array
     static var nameCharacters = [String]()
     var name:String = ""
@@ -20,8 +22,9 @@ class Team {
         createTeam()
     }
     
+    // MARK: - Methods
     
-    // composition of the team
+    /// composition of the team
     func nameTeam() -> String {
         var name = ""
         repeat {
@@ -32,7 +35,7 @@ class Team {
         return name
     }
     
-    // character selection loop in his team by the user
+    /// character selection loop in his team by the user
     func playerChoice() {
         print("")
         print("===============================")
@@ -44,7 +47,7 @@ class Team {
         print("===============================")
     }
     
-    // function that checks if the name chosen by the user is not already used
+    /// function that checks if the name chosen by the user is not already used
     func onlyName() -> String  {
         var nameCharacter = String()
         repeat {
@@ -52,11 +55,11 @@ class Team {
             if let data = readLine() {
                 nameCharacter = data
             }
-            if Team.nameCharacters.contains(nameCharacter) {
+            if Team.nameCharacters.contains(nameCharacter.lowercased()) {
                 print("Choose an other name to your Character : ")
                 nameCharacter = ""
             } else {
-                Team.nameCharacters.append(nameCharacter)
+                Team.nameCharacters.append(nameCharacter.lowercased())
                 print("Your name is available")
             }
         } while nameCharacter == ""
@@ -64,9 +67,7 @@ class Team {
         return nameCharacter
     }
     
-    
-    
-    // the player created his team by choosing 3 characters
+    /// the player created his team by choosing 3 characters
     private func createTeam()  {
         for _ in 1..<4 {
             var userChoiceTeam = 0
@@ -103,14 +104,14 @@ class Team {
         }
     }
     
-    // function that allows to browse my character chart and display the teams
+    /// function that allows to browse my character chart and display the teams
     func resumeTeam() {
         for (key, value) in characters.enumerated() {
             value.resumeCharacter(index: key+1)
         }
     }
     
-    // function to check if the character is dead. return true if is right
+    /// function to check if the character is dead. return true if is right
     func isDead() -> Bool {
         var isAlive = true
         for character in characters {
@@ -122,7 +123,6 @@ class Team {
         }
             return isAlive
     }
-    
 }
 
 
