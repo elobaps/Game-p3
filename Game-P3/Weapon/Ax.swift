@@ -8,7 +8,7 @@
 
 import Foundation
 
-// creation of the class Ax that inherits the class of weapons and defines the weapon
+/// creation of the class Ax that inherits the class of weapons and defines the weapon
 class Ax:Weapon {
     init(){
         super.init(nameWeapon: "Ax", damage: 20)

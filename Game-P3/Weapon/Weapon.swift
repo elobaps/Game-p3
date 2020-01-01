@@ -8,10 +8,16 @@
 
 import Foundation
 
-// creation of the weapon class that defines each of them
+/// creation of the weapon class that defines each of them
 class Weapon {
+    
+     // MARK: - Properties
+    
     let nameWeapon:String
     let damage: Int
+    
+     // MARK: - Initializer
+    
     init(nameWeapon:String, damage:Int) {
         self.nameWeapon = nameWeapon
         self.damage = damage

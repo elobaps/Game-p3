@@ -8,11 +8,15 @@
 
 import Foundation
 
-// main class of the game
+/// main class of the game
 class Game {
+    
+     // MARK: - Properties
     
     private var arrayTeams = [Team]() // creation of players's team array
     private var startGameDate: Date?
+    
+     // MARK: - Methods
     
     func startGame () {
         print("Let's start !")
@@ -28,9 +32,9 @@ class Game {
         resume()
     }
     
-    // battle function : choice of a character in the attacking team and in the enemy team
-    // chest'discovery
-    // check if the character is an attacker or a mage
+    /* battle function : choice of a character in the attacking team and in the enemy team
+    chest'discovery
+    check if the character is an attacker or a mage */
     private func battle() {
         startGameDate = Date()
         print("====================================")
@@ -70,7 +74,7 @@ class Game {
         } while true
     }
     
-    // bonus: calculation of the duration's game
+    /// bonus: calculation of the duration's game
     private func showTimer() -> String {
         guard let date = startGameDate else { return "" }
         let interval = Date().timeIntervalSince(date)
@@ -80,7 +84,7 @@ class Game {
         return timer
     }
     
-    // function giving the winning team
+    /// function giving the winning team
     private func getWinner() -> Team? {
         var winner:Team?
         for team in arrayTeams {
@@ -91,7 +95,7 @@ class Game {
         return winner
     }
     
-    // function showing the duration of the game and the winning team
+    /// function showing the duration of the game and the winning team
     private func resume() {
         guard let winner = getWinner() else { return }
         print("The winner is: " + winner.name)
@@ -104,7 +108,7 @@ class Game {
         myAttacker.attack(target: myEnemy)
     }
     
-    // loop for character selection in battle by the user
+    /// loop for character selection in battle by the user
     private func selectChar() -> Int {
         var userChoiceChar = 0
         repeat{
@@ -117,7 +121,7 @@ class Game {
         return userChoiceChar
     }
     
-    // random chest function that allows to get a new weapon for the attacker and a new care for the magician
+    /// random chest function that allows to get a new weapon for the attacker and a new care for the magician
     private func chest(target:Character) {
         let random = Int.random(in: 0...1)
         if random == 1 {

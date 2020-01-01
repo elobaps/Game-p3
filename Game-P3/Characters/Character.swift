@@ -8,12 +8,18 @@
 
 import Foundation
 
-// creation of the character class that defines each of them
+/// creation of the character class that defines each of them
 class Character {
+    
+    // MARK: - Properties
+    
     let nameCharacter:String
     var lifePoints:Int
     let descriptionCharacter:String
     var weapon:Weapon
+    
+    // MARK: - Initializer
+    
     init(lifePoints:Int, nameCharacter:String, descriptionCharacter: String, weapon:Weapon) {
         self.lifePoints = lifePoints
         self.nameCharacter = nameCharacter
@@ -21,11 +27,13 @@ class Character {
         self.weapon = weapon
     }
     
+    // MARK: - Methods
+    
     func resumeCharacter(index: Int) {
         print("\(index) : " + nameCharacter + " - \(lifePoints) points de vie - \(weapon.damage) points de dégats - " + descriptionCharacter)
     }
     
-    // function that determines whether the character is alive or not and allows it to be damaged
+    /// function that determines whether the character is alive or not and allows it to be damaged
     func attack(target:Character) {
         if lifePoints > 0  {
             if target.lifePoints <= 0 {
